@@ -24,8 +24,8 @@ async def commands(ctx):
 
 @client.command()
 async def version(ctx):
-    await ctx.channel.send('Version : 0.6.1a\n'
-                           'Added Rdnd and a joke fixed mount. Dwarf :)')
+    await ctx.channel.send('Version : 0.6.0a\n'
+                           'Added Rdnd and a joke :)')
 
 
 @client.command()
@@ -42,6 +42,10 @@ async def joke(ctx):
 @client.command()
 async def james(message):
     await message.channel.send('Ooga Booga')
+
+@client.command()
+async def neener(message):
+    await message.channel.send('NeeNeR NeEneR')
 
 
 @client.command()
@@ -130,9 +134,9 @@ def get_race():
         if fate == 2:
             race = 'Hill Dwarf (+2 CON, +1 WIS)'
         if fate == 3:
-            race = 'Mountain Dwarf (+2 CON, +2 STR)'
+            race = 'Stout Halfing (+2 CON, +2 STR)'
 
     return race
 
 
-client.run('')
+client.run('NTA3MDQwMjI0MzI5NzI4MDAw.Drq_dQ.V73tCFAl3AJmhqejRPMzOc13jpA')
